@@ -10,6 +10,10 @@
     font-family: Binaria;
     src: url(../fonts/Binaria-Regular.otf);
 }
+@font-face {
+    font-family: PP Neue Montreal;
+    src: url(../fonts/PPNeueMontreal-Regular.otf);
+}
 a,
 button,
 [role='button'],
@@ -22,7 +26,7 @@ button,
 html,
 body {
     font-family: 'Montserrat', sans-serif;
-    background: $white;
+    background: $bg;
     color: $black;
     max-width: 100vw;
     -ms-overflow-style: none;
