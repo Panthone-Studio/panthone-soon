@@ -5,7 +5,9 @@
       <p>
         <a target="_blank" href="https://t.co/fw64pLOk6O">Instagram</a
         ><a target="_blank" href="https://twitter.com/PanthoneStudio">Twitter</a
-        ><a href="javascript:void(0)">Awwwards</a>
+        ><a href="https://www.linkedin.com/company/panthone-studio/"
+          >LinkedIn</a
+        >
       </p>
     </nav>
     <main class="home__content">
@@ -36,8 +38,8 @@
 .home {
   &__nav {
     @extend %flex-ac-jb;
-    height: 6vh;
-    padding: 0 1.5rem;
+    height: calc(6vh + 2.5rem);
+    padding: 2.5rem 1.5rem;
     @include respondMax("mobile2x") {
       flex-direction: column;
       justify-content: flex-start;
@@ -94,7 +96,7 @@
     }
   }
   &__content {
-    height: calc(100vh - 13vh);
+    height: calc(100vh - 13vh - 5rem);
     @extend %center;
     padding: 0 1.5rem;
     &__text {
@@ -139,7 +141,7 @@
     }
   }
   &__footer {
-    height: 7vh;
+    height: calc(7vh + 2.5rem);
     text-align: center;
     width: 100vw;
     margin: 0 auto;
