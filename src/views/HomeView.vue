@@ -134,7 +134,7 @@
           letter-spacing: 0.02em;
           font-feature-settings: "ss06" on, "ss07" on;
           color: $text;
-          cursor: pointer;
+          pointer-events: none;
           letter-spacing: 2%;
         }
       }
