@@ -2,7 +2,11 @@
   <section class="home">
     <nav class="home__nav">
       <h4>Site in Development</h4>
-      <p>Instagram, Twitter, Awwwards</p>
+      <p>
+        <a target="_blank" href="https://t.co/fw64pLOk6O">Instagram</a
+        ><a target="_blank" href="https://twitter.com/PanthoneStudio">Twitter</a
+        ><a href="javascript:void(0)">Awwwards</a>
+      </p>
     </nav>
     <main class="home__content">
       <div class="home__content__text">
@@ -54,18 +58,40 @@
       letter-spacing: 0.02em;
       font-feature-settings: "ss06" on, "ss07" on;
       color: $text;
+      pointer-events: none;
     }
     p {
-      font-family: "PP Neue Montreal", sans-serif;
-      font-style: normal;
-      font-weight: 450;
-      font-size: Max(1rem, 16px);
-      line-height: Max(1.5rem, 20px);
-      text-align: right;
-      letter-spacing: 0.02em;
-      text-decoration-line: underline;
-      font-feature-settings: "ss06" on, "ss07" on;
-      color: $text;
+      @extend %flex-ac;
+      gap: 1rem;
+      position: relative;
+      a {
+        font-family: "PP Neue Montreal", sans-serif;
+        font-style: normal;
+        font-weight: 450;
+        font-size: Max(1rem, 16px);
+        line-height: Max(1.5rem, 20px);
+        text-align: right;
+        letter-spacing: 0.02em;
+        transition: all ease-in-out 0.7s;
+        font-feature-settings: "ss06" on, "ss07" on;
+        color: $text;
+        position: relative;
+        &::after {
+          transition: all ease-in-out 0.7s;
+          position: absolute;
+          width: 0%;
+          content: "";
+          left: 0;
+          bottom: 0;
+          height: 2px;
+          background: $black;
+        }
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+      }
     }
   }
   &__content {
@@ -84,6 +110,7 @@
         letter-spacing: -0.04em;
         font-feature-settings: "ss06" on, "ss07" on;
         color: $text;
+        pointer-events: none;
         @media screen and (max-width: 500px) {
           font-size: 40px;
         }
@@ -106,6 +133,7 @@
           letter-spacing: 0.02em;
           font-feature-settings: "ss06" on, "ss07" on;
           color: $text;
+          cursor: pointer;
         }
       }
     }
@@ -115,7 +143,7 @@
     text-align: center;
     width: 100vw;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 1.5rem 2.5rem;
     p {
       font-family: "PP Neue Montreal", sans-serif;
       font-style: normal;
@@ -125,6 +153,9 @@
       letter-spacing: 0.02em;
       font-feature-settings: "ss06" on, "ss07" on;
       color: $text;
+      a {
+        text-decoration: underline;
+      }
     }
   }
 }
