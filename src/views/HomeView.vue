@@ -57,6 +57,7 @@
       font-feature-settings: "ss06" on, "ss07" on;
       color: $text;
       pointer-events: none;
+      letter-spacing: 2%;
     }
     p {
       @extend %flex-ac;
@@ -69,7 +70,7 @@
         font-size: Max(1rem, 16px);
         line-height: Max(1.5rem, 20px);
         text-align: right;
-        letter-spacing: 0.02em;
+        letter-spacing: 2%m;
         transition: all ease-in-out 0.7s;
         font-feature-settings: "ss06" on, "ss07" on;
         color: $text;
@@ -132,6 +133,7 @@
           font-feature-settings: "ss06" on, "ss07" on;
           color: $text;
           cursor: pointer;
+          letter-spacing: 2%;
         }
       }
     }
@@ -151,6 +153,7 @@
       letter-spacing: 0.02em;
       font-feature-settings: "ss06" on, "ss07" on;
       color: $text;
+      letter-spacing: 2%;
       a {
         text-decoration: underline;
       }
