@@ -26,9 +26,7 @@
       <p>Booking Starts by March 2023</p>
       <p>
         For enquiries, contact us at
-        <a href="https://panthone.design/" target="_blank"
-          >https://panthone.design</a
-        >
+        <a href="mailto:hello@gmail.com">hello@panthone.design</a>
       </p>
     </footer>
   </section>
